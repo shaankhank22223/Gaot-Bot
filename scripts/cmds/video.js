@@ -22,7 +22,7 @@ module.exports = {
     if (!args.length) return api.sendMessage("Please provide a video name.", event.threadID, event.messageID);
 
     const aryan = args.join(" ");
-    const msg = await api.sendMessage("🎧 Please wait...", event.threadID, null, event.messageID);
+    const msg = await api.sendMessage("✅ Apki Request Jari Hai Please wait...", event.threadID, null, event.messageID);
 
     try {
       const r = await d(aryan);
@@ -49,7 +49,8 @@ module.exports = {
 
       api.setMessageReaction("✅", event.messageID, () => {}, true);
 
-      const text = `📌 Title: ${v.title}\n👀 Views: ${v.views}`;
+      const text = ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝑺𝑯𝑨𝑨𝑵 𝑲𝑯𝑨𝑵««
+          🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰👉 Title: ${v.title}\n👀 Views: ${v.views}`;
 
       await api.sendMessage(
         { attachment: b.createReadStream(save), body: text },
