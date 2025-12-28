@@ -5,7 +5,7 @@ const d = require("yt-search");
 
 module.exports = {
   config: {
-    name: "play",
+    name: "song",
     aliases: [],
     version: "0.0.1",
     author: "ArYAN",
@@ -21,7 +21,7 @@ module.exports = {
     if (!g.length) return e.sendMessage("❌ Provide a song name or YouTube URL.", f.threadID, f.messageID);
 
     let h = g.join(" ");
-    const i = await e.sendMessage("🎵 Please wait...", f.threadID, null, f.messageID);
+    const i = await e.sendMessage("✅ Apki Request Jari Hai Please wait...", f.threadID, null, f.messageID);
 
     try {
       let j;
@@ -46,7 +46,8 @@ module.exports = {
       b.writeFileSync(p, q.data);
 
       await e.sendMessage(
-        { attachment: b.createReadStream(p), body: `🦆 ${n.title}` },
+        { attachment: b.createReadStream(p), body: ` »»𝑶𝑾𝑵𝑬𝑹««★™  »»𝑺𝑯𝑨𝑨𝑵 𝑲𝑯𝑨𝑵««
+          🥀𝒀𝑬 𝑳𝑶 𝑩𝑨𝑩𝒀 𝑨𝑷𝑲𝑰👉 ${n.title}` },
         f.threadID,
         () => {
           b.unlinkSync(p);
